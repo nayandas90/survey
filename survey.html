@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<div class="bgimage">
+    <div class="ashArea">
+       <div><marquee class="mText" direction="">Designed by Nayan Das</marquee></div> 
+
+
+
+        <body>
+            <h1 class="headline">freeCodeCamp Survey Form</h1>
+            <h3 class="headlineS">Thank you for taking the time to help us improve the platform</h3>
+            <form>
+
+                <samp>
+
+                <p class="text"> Name
+                    <br><input class="blockPrime" type="text" placeholder="Enter Your Name" required>
+                </p>
+                
+                <p class="text">Email
+                    <br> <input class="blockPrime" type="text" placeholder="Enter Your Email"  required>
+                </p>
+                
+                <p class="text"><strong>Age</strong>(optional)
+                    <br> <input class="blockPrime" type="number" placeholder="Age">
+                </p>
+            </form>
+
+            <p class="text">
+                Would you recommand freeCodeCamp to a friend?
+                </br>
+
+                <label for="yes">
+                    <input id="yes" type="radio" name="yes-no-notsure" checked> Definitely
+                </label>
+                </br>
+                <label for="no">
+                    <input id="no" type="radio" name="yes-no-notsure"> No
+                </label>
+                </br>
+                <label for="notsure">
+                    <input id="notsure" type="radio" name="yes-no-notsure"> Not sure
+                </label>
+                </p>
+
+                <p class="text">
+                What is your favorite feature of freeCodeCamp?
+                <label for="selectoption">
+                    <select class="blockPrime" id="selectoption" name="selectoption">
+                        <option>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="commiunity">Community</option>
+                        <option value="opensource">Open Source</option>  
+            </select>
+            </label>
+        </p>
+
+            <p class="text">
+           <strong> What you would like to be improved?</strong> (Check all that apply) <br>
+
+           <input type="checkbox" id="fprojects" value="fprojects" name="fprojects">
+           <label for="fprojects">Front-end Projects</label> <br> 
+
+           <input type="checkbox" id="bprojects" value="bprojects" name="bprojects">
+           <label for="bprojects">Back-end Projects</label> <br> 
+
+           <input type="checkbox" id="datavisualization" value="datavisualization" name="datavisualization">
+           <label for="datavisualization">Data Visualization</label> <br> 
+
+           <input type="checkbox" id="challenge" value="challenge" name="challenge">
+           <label for="challenge">Challenges</label> <br> 
+
+           <input type="checkbox" id="oscommiunity" value="oscommiunity" name="oscommiunity">
+           <label for="oscommiunity">Open Source Community</label> <br> 
+
+           <input type="checkbox" id="ghrooms" value="ghrooms" name="ghrooms">
+           <label for="ghrooms">Gitter help rooms</label> <br> 
+
+           <input type="checkbox" id="video" value="video" name="video">
+           <label for="video">Videos</label> <br> 
+
+           <input type="checkbox" id="city" value="city" name="city">
+           <label for="city">City Meetups</label> <br> 
+
+           <input type="checkbox" id="wiki" value="wiki" name="wiki">
+           <label for="wiki">Wiki</label> <br> 
+
+           <input type="checkbox" id="forum" value="forum" name="forum">
+           <label for="forum">Forum</label> <br> 
+
+           <input type="checkbox" id="adicourse" value="adicourse" name="adicourse">
+           <label for="adicourse">Additional Courses</label> <br> 
+           </p>
+
+           <p class="text"> Any comments or suggestions? <br>
+               <textarea 
+               placeholder="Enter Your Comment Here" class="commentBox" >
+               </textarea>
+            </p>
+
+            <a href="submit.html">
+                <button class="block" type="submit">Submit</button>
+        </a>
+    </samp>
+        </body>
+    </div>
+</div>
+
+</html>
